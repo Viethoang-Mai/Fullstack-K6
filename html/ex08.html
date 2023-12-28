@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>HTML FORM</h2>
+        <form
+            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+            method="post"
+        >
+            <div>
+                <label for="lbl-name">Họ và tên</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="lbl-name"
+                    placeholder="Họ và tên"
+                    value=""
+                    required
+                />
+            </div>
+            <div>
+                <label for="lbl-email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="lbl-email"
+                    placeholder="Email.."
+                />
+            </div>
+            <div>
+                <label for="lbl-password">password</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="lbl-password"
+                    placeholder="password.."
+                />
+            </div>
+            <div>
+                <label for="lbl-avt">file</label>
+                <input type="file" name="file" id="lbl-file" multiple p />
+            </div>
+            <div>
+                <label for="lbl-age">Tuổi</label>
+                <input
+                    type="number"
+                    name="name"
+                    id="lbl-age"
+                    placeholder="age.."
+                    min=""
+                    max=""
+                    step="0.5"
+                />
+            </div>
+            <div>
+                <label for="lbl-search">Search</label>
+                <input
+                    type="search"
+                    name="search"
+                    id="lbl-search"
+                    placeholder=""
+                />
+            </div>
+            <div>
+                <label for="lbl-date">date</label>
+                <input type="date" name="date" id="lbl-date" placeholder="" />
+            </div>
+            <div>
+                <label for="lbl-color">color</label>
+                <input
+                    type="color"
+                    name="color"
+                    id="lbl-color"
+                    placeholder=""
+                />
+            </div>
+            <div>
+                <label>Giới tính</label>
+                <label>
+                    <input type="radio" name="gender" value="unknown" /> Không
+                    xác định
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="male" checked />
+                    Nam
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" /> Nữ
+                </label>
+                <!-- radio đặt cùng name để chỉ chọn 1 gtri -->
+            </div>
+            <div>
+                <label>Bạn biết đến F8 qua đâu</label>
+                <label>
+                    <input type="checkbox" name="source" value="1" /> Facebook
+                </label>
+                <label>
+                    <input type="checkbox" name="source" value="2" checked />
+                    Youtube
+                </label>
+                <label>
+                    <input type="checkbox" name="source" value="3" /> Instagram
+                </label>
+                <!-- checkbox đặt cùng name để chỉ chọn nhiều gtri -->
+            </div>
+            <div>
+                <label for="price">Giá</label>
+                <input type="range" name="price" id="price" />
+            </div>
+            <div>
+                <label for="lbl-message">Tin nhắn </label>
+                <textarea name="message" id="lbl-message"></textarea>
+            </div>
+            <div>
+                <label for="lbl-select">Tỉnh/TP</label>
+                <select name="province" id="lbl-select" multiple>
+                    <option value="HN">Chon Tinh/ TP</option>
+                    <option value="HN">Hanoi</option>
+                    <option value="TH" selected>Thanh Hoa</option>
+                    <option value="HCM">TP Ho Chi Minh</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+<!-- 
+Form: 
+    - Biểu mẫu để gửi dữ liệu
+    - Không được lồng nhau
+    - Trên 1 trang có thể có nhiều form
+Form có 2 thành phần
+    - Field: Trường nhập liệu
+    -Button: Nút gửi dữ liệu
+
+
+
+ -->
