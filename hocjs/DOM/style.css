@@ -1,0 +1,40 @@
+.player {
+    width: 80%;
+    margin: 30px auto;
+}
+.player-ic {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.player-timer {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.progress-bar {
+    height: 10px;
+    width: 100%;
+    background: gray;
+    position: relative;
+    cursor: pointer;
+}
+.progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    background: red;
+}
+.progress > span {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 9999px;
+    background: purple;
+    right: 0;
+    top: 50%;
+    translate: 50% -50%;
+}

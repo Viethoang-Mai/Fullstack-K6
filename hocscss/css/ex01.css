@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body > .box {
+  margin-left: 0;
+}
+body > .box:hover {
+  background: fixed;
+}
+body .col--1 {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=ex01.css.map */

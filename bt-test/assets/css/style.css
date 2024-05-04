@@ -1,0 +1,12 @@
+.content {
+    width: 250px;
+    margin: 50px auto;
+}
+label {
+    cursor: pointer;
+}
+.result-checkbox {
+}
+.checkbox-items {
+    margin: 20px 0;
+}
